@@ -1,6 +1,6 @@
 #include "MqttLogger.h"
 
-MqttLogger::MqttLogger(PubSubClient &client, const char *topic, const MqttLoggerMode mode) : _client(client), _mode(mode), _topic(topic) {
+MqttLogger::MqttLogger(PubSubClient &client, const char *topic, const MqttLoggerMode mode) : _mode(mode), _topic(topic), _client(client) {
 }
 
 MqttLogger::~MqttLogger() {
